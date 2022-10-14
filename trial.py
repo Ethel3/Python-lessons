@@ -1,2 +1,2 @@
 school = "university of ghana"
-print(school.find("g"))
+print(school.replace("g", "G"))
