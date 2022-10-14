@@ -1,2 +1,2 @@
 school = "university of ghana"
-print(school.upper())
+print(school.find("g"))
