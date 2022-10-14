@@ -4,9 +4,9 @@
 
 #Types conversions
 #Note that, we have  three different data types namely; Numbers(10, 1), strings("hello", "Basket") and boolean(True, False)
-birth_year = input("Enter your birth year: ")
-age = 2022 - int(birth_year)
-print(age)
+# birth_year = input("Enter your birth year: ")
+# age = 2022 - int(birth_year)
+# print(age)
 
 
 # def number(first_num, second_num):
@@ -18,3 +18,9 @@ print(age)
 #     print("high")
 
 # number(3, 4)
+
+#summation
+First_number = input("First: ")
+Second_number = input("Second: ")
+sum = int(First_number) + int(Second_number)
+print(sum)
