@@ -4,17 +4,17 @@
 
 #Types conversions
 #Note that, we have  three different data types namely; Numbers(10, 1), strings("hello", "Basket") and boolean(True, False)
-# birth_year = input("Enter your birth year: ")
-# age = 2022 - "2004"
-# print(age)
+birth_year = input("Enter your birth year: ")
+age = 2022 - int(birth_year)
+print(age)
 
 
-def number(first_num, second_num):
-    print(first_num + second_num)
+# def number(first_num, second_num):
+#     print(first_num + second_num)
 
-if 2 < 10:
-    print("less")
-else:
-    print("high")
+# if 2 < 10:
+#     print("less")
+# else:
+#     print("high")
 
-number(3, 4)
+# number(3, 4)
