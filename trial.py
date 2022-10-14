@@ -23,4 +23,6 @@
 First_number = input("First: ")
 Second_number = input("Second: ")
 sum = float(First_number) + float(Second_number)
-print(sum)
+#print(sum)
+#python can only concatenate str but not float
+print("Sum: " + str(sum))
