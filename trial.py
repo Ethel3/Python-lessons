@@ -20,9 +20,14 @@
 # number(3, 4)
 
 #summation
-First_number = input("First: ")
-Second_number = input("Second: ")
-sum = float(First_number) + float(Second_number)
+# First_number = input("First: ")
+# Second_number = input("Second: ")
+# sum = float(First_number) + float(Second_number)
 #print(sum)
 #python can only concatenate str but not float
+#print("Sum: " + str(sum))
+
+First_number = float(input("First: "))
+Second_number = float(input("Second: "))
+sum = First_number + Second_number
 print("Sum: " + str(sum))
