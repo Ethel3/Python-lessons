@@ -22,5 +22,5 @@
 #summation
 First_number = input("First: ")
 Second_number = input("Second: ")
-sum = int(First_number) + int(Second_number)
+sum = float(First_number) + float(Second_number)
 print(sum)
