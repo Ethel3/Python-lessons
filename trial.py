@@ -1,8 +1,7 @@
-#Arithmetic operators
-x = 20
-x = x + 5
- 
-#orgmented 
-x += 3
-#or
-x *= 3
+# operator precedence
+Z = 16 + 3 * 5
+print(Z)
+
+#and
+Z = (16 + 3) * 5
+print(Z)
