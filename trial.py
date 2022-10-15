@@ -1,12 +1,10 @@
-#  Logical operators
-#and operator: both 
-cost = 50
-print(cost < 70 and cost > 45)
+#  If Statements
+dollar = 8
 
-#or operator: at least one
-cost = 10
-print(cost < 15 or cost > 30 )
-
-#not operator: inverses
-cost = 10
-print( not cost > 39)
+if dollar > 10:
+    print("Cedi is depreciating")
+    print("Economy is hard")
+elif dollar > 5:
+    print("We are safe")
+else:
+    print("We are growing")
