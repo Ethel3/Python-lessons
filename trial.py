@@ -51,3 +51,11 @@ print(6 in values)
 
 #length of function
 print(len(values))
+
+
+
+# for loops
+values = [1, 2, 3, 4, 5, 6]          #i = 0
+for number in values:                #while i < len(values):
+    print(number)                           #print(values[i])
+                                            #i = i +1
