@@ -59,3 +59,8 @@ values = [1, 2, 3, 4, 5, 6]          #i = 0
 for number in values:                #while i < len(values):
     print(number)                           #print(values[i])
                                             #i = i +1
+                                            
+#range function
+values = range(6) # range(3, 9) # range(5, 10, 2)
+for value in values:
+    print(value)
