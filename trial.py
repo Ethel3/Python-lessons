@@ -1,10 +1,10 @@
-#exercise
-W = int(input("Weight: "))
-U = input("(K)g or (L)bs: ") 
-if U.upper() == "K":
-    converted = W / 0.45
-    print("Weight in Lbs: " + str(converted))  
-else:
-    converted = W * 0.45
-    print("W in kgs: " + str(converted))
-
+#while loop
+i = 1
+while i <= 1_000:
+    print(i)
+    i = i + 1
+    
+i = 1
+while i <= 10:
+    print(i * "*")
+    i = i + 1
