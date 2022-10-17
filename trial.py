@@ -64,3 +64,9 @@ for number in values:                #while i < len(values):
 values = range(6) # range(3, 9) # range(5, 10, 2)
 for value in values:
     print(value)
+    
+    
+#set is a collection with no duplicate
+numbers = [1,2,2,3,3,4,5]
+uniques = set(numbers)
+print(uniques)
