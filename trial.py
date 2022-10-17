@@ -86,3 +86,6 @@
 schools = {1: "legon", 2: "knust", 3:"ashesi", 4:"ucc"}
 # print(schools)
 print(schools.get(3))
+
+schools[2] = "Academic City"
+print(schools)
