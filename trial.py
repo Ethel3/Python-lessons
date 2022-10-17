@@ -25,48 +25,53 @@
 # print(schools[1:3])
 
 #list methods
-values = [1, 2, 3, 4, 5, 6, 7]
-values.append(8)
-print(values)
+# values = [1, 2, 3, 4, 5, 6, 7]
+# values.append(8)
+# print(values)
 
 #inserting a value in the middle 
-values = [1, 2, 3,  5, 6, 7,8]
-values.insert(3, 4)
-print(values)
+# values = [1, 2, 3,  5, 6, 7,8]
+# values.insert(3, 4)
+# print(values)
 
 #removing a value
-values = [1, 2, 3,  5, 6, 7,8]
-values.remove(6)
-print(values)
+# values = [1, 2, 3,  5, 6, 7,8]
+# values.remove(6)
+# print(values)
 
 
 #removing all values
-values = [1, 2, 3,  5, 6, 7,8]
-values.clear()
-print(values)
+# values = [1, 2, 3,  5, 6, 7,8]
+# values.clear()
+# print(values)
 
 #checking for an item in the range
-values = [1, 2, 3, 4, 5, 6]
-print(6 in values)
+# values = [1, 2, 3, 4, 5, 6]
+# print(6 in values)
 
 #length of function
-print(len(values))
+# print(len(values))
 
 
 
 # for loops
-values = [1, 2, 3, 4, 5, 6]          #i = 0
-for number in values:                #while i < len(values):
-    print(number)                           #print(values[i])
+# values = [1, 2, 3, 4, 5, 6]          #i = 0
+# for number in values:                #while i < len(values):
+#     print(number)                           #print(values[i])
                                             #i = i +1
                                             
 #range function
-values = range(6) # range(3, 9) # range(5, 10, 2)
-for value in values:
-    print(value)
+# values = range(6) # range(3, 9) # range(5, 10, 2)
+# for value in values:
+#     print(value)
     
     
 #set is a collection with no duplicate
-numbers = [1,2,2,3,3,4,5]
-uniques = set(numbers)
-print(uniques)
+# numbers = [1,2,2,3,3,4,5]
+# uniques = set(numbers)
+# print(uniques)
+
+numbers = [1,2,2,2,3,3,3,4]
+first = set(numbers)
+second = {5,6,6,7,8,9,10}
+print(first | second)
