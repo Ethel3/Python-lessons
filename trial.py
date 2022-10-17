@@ -66,7 +66,7 @@
 #     print(value)
     
     
-#set is a collection with no duplicate
+#set is a collection with no duplicate. It does not support indexing.
 # numbers = [1,2,2,3,3,4,5]
 # uniques = set(numbers)
 # print(uniques)
@@ -76,5 +76,8 @@ first = set(numbers)
 second = {2,3,5,6,6,7,8,9,10}
 # print(first | second) 
 # print(first & second)
-print(first - second)
-print(first ^ second)
+# print(first - second)
+# print(first ^ second)
+
+if 2 in first:
+    print("yes")
