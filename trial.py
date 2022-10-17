@@ -75,4 +75,6 @@ numbers = [1,2,2,2,3,3,3,4]
 first = set(numbers)
 second = {2,3,5,6,6,7,8,9,10}
 # print(first | second) 
-print(first & second)
+# print(first & second)
+print(first - second)
+print(first ^ second)
