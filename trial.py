@@ -71,13 +71,18 @@
 # uniques = set(numbers)
 # print(uniques)
 
-numbers = [1,2,2,2,3,3,3,4]
-first = set(numbers)
-second = {2,3,5,6,6,7,8,9,10}
+# numbers = [1,2,2,2,3,3,3,4]
+# first = set(numbers)
+# second = {2,3,5,6,6,7,8,9,10}
 # print(first | second) 
 # print(first & second)
 # print(first - second)
 # print(first ^ second)
 
-if 2 in first:
-    print("yes")
+# if 2 in first:
+#     print("yes")
+
+#Dictionary in python: collection that has key value pairs.
+schools = {1: "legon", 2: "knust", 3:"ashesi", 4:"ucc"}
+# print(schools)
+print(schools.get(3))
