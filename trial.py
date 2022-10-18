@@ -87,5 +87,14 @@ schools = {1: "legon", 2: "knust", 3:"ashesi", 4:"ucc"}
 # print(schools)
 print(schools.get(3))
 
-schools[2] = "Academic City"
-print(schools)
+# schools[2] = "Academic City"
+# print(schools)
+# print(schools.popitem())
+
+mydictionary = dict(key1 = "legon", key2= "knust")
+print(mydictionary)
+
+num = { 1: 2, 2: 4, 3: 5,}
+print(num.fromkeys(mydictionary))
+
+#use case
