@@ -97,4 +97,6 @@ print(mydictionary)
 num = { 1: 2, 2: 4, 3: 5,}
 print(num.fromkeys(mydictionary))
 
-#use case
+#modules
+def square(x):
+    return x * x
