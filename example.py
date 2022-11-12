@@ -50,3 +50,11 @@ class Motorbike(Vehicle):
             self.wheels = 2
         self.doors = 0
         self.enginetype = enginetype
+        
+car1 = Car("gas")
+car2 = Car("electric")
+mb1 = Motorbike("gas", True)
+
+print(mb1.wheels)
+print(car1.enginetype)
+print(car2.doors)
