@@ -28,3 +28,12 @@ def main():
     print(result)
 if __name__== "__main__":
     main()
+    
+    # classes
+class Vehicle():
+    def __init__(self, bodystyle):
+        self.bodystyle = bodystyle
+        
+class Car(Vehicle):
+    def __init__(self, enginetype):
+        super().__init__("Car")
