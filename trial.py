@@ -176,5 +176,10 @@ def main():
     print(t)
     print(datetime.datetime.fromtimestamp(path.getmtime("textfile.txt")))
     
+    # calculate how long file was modified
+    td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+    print("It has been", td, "since the file was modified")
+    print("or,", td.total_seconds(),"seconds")
+    
 if __name__== "__main__":
     main()
