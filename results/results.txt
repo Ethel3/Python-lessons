@@ -1,0 +1,10 @@
+Total bytecount:128015
+Files list:
+--------------
+archive.zip
+challenges.py
+example.py
+newfile.txt
+testxip.zip
+textfile.txt.bak
+trial.py
