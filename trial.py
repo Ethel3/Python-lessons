@@ -99,10 +99,10 @@ print(num.fromkeys(mydictionary))
 
 # importing modules
 # math module
-import math 
-print("The square root of 16 is", math.sqrt(16))
+# import math 
+# print("The square root of 16 is", math.sqrt(16))
 
-print("Pi is", math.pi)
+# print("Pi is", math.pi)
 
 # using exception
 # try:
@@ -110,14 +110,39 @@ print("Pi is", math.pi)
 # except:
     # print("This did not work")
 
-try:
-    answer = input("What should I divide 10 by?")
-    num = int(answer)
-    print(10/num)
-except ZeroDivisionError as e:
-    print("You can not divide by Zero!")
-except ValueError as e:
-    print("You didn't give a valid number!")
-    print(e)
-finally:
-    print("This code always runs")
+# try:
+#     answer = input("What should I divide 10 by?")
+#     num = int(answer)
+#     print(10/num
+# except ZeroDivisionError as e:
+#     print("You can not divide by Zero!")
+# except ValueError as e:
+#     print("You didn't give a valid number!")
+#     print(e)
+# finally:
+#     print("This code always runs")
+
+# reading and writing files
+def main():
+    # opening a file for writing that does not exist
+    myfile = open("textfile.txt", "w+")
+    
+    # open the file to append text to the end
+    myfile = open("textfile.txt", "a+")
+    
+    # write code lines to the file
+    for i in  range(6):
+        myfile.write("This is some new text\n")
+        
+    # closing a file
+    myfile.close()
+    
+    # open the file back up and read the contents
+    myfile = open("textfile.txt", "r")
+    if myfile.mode == "r":
+        contents = myfile.read()
+        print(contents)
+     
+    
+if __name__== "__main__":
+    main()
