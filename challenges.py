@@ -20,4 +20,4 @@ while (run):
     for x in teststr:
         if x.isalnum():
             newstr += x
-    print("Palindrome test:", is_palindrome(newstr))
+    # print("Palindrome test:", is_palindrome(newstr))
