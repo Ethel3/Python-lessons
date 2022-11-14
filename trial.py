@@ -123,29 +123,44 @@ print(num.fromkeys(mydictionary))
 #     print("This code always runs")
 
 # reading and writing files
-def main():
-    # opening a file for writing that does not exist
-    myfile = open("textfile.txt", "w+")
+# def main():
+#     # opening a file for writing that does not exist
+#     myfile = open("textfile.txt", "w+")
     
-    # open the file to append text to the end
-    myfile = open("textfile.txt", "a+")
+#     # open the file to append text to the end
+#     myfile = open("textfile.txt", "a+")
     
-    # write code lines to the file
-    for i in  range(6):
-        myfile.write("This is some new text\n")
+#     # write code lines to the file
+#     for i in  range(6):
+#         myfile.write("This is some new text\n")
         
-    # closing a file
-    myfile.close()
+#     # closing a file
+#     myfile.close()
     
-    # open the file back up and read the contents
-    myfile = open("textfile.txt", "r")
-    if myfile.mode == "r":
-        # contents = myfile.read()
-        # print(contents)
-        fl = myfile.readlines()
-        for x in fl:
-            print(x)
+#     # open the file back up and read the contents
+#     myfile = open("textfile.txt", "r")
+#     if myfile.mode == "r":
+#         # contents = myfile.read()
+#         # print(contents)
+#         fl = myfile.readlines()
+#         for x in fl:
+#             print(x)
      
+    
+# if __name__== "__main__":
+#     main()
+
+
+# working with os path utilities
+import os 
+from os import path
+import datetime
+from datetime import date, time, timedelta
+import time
+
+def main():
+    # print name of the os
+    print(os.name)
     
 if __name__== "__main__":
     main()
