@@ -97,6 +97,9 @@ print(mydictionary)
 num = { 1: 2, 2: 4, 3: 5,}
 print(num.fromkeys(mydictionary))
 
-#modules
-def square(x):
-    return x * x
+# importing modules
+# math module
+import math 
+print("The square root of 16 is", math.sqrt(16))
+
+print("Pi is", math.pi)
