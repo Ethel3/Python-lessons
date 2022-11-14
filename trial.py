@@ -162,5 +162,10 @@ def main():
     # print name of the os
     print(os.name)
     
+    # check for item existence and type
+    print("Item exists:", str(path.exists("textfile.txt")))
+    print("Item is a file:", path.isfile("textfile.txt"))
+    print("Item is a directory:", path.isdir("textfile.txt"))
+    
 if __name__== "__main__":
     main()
