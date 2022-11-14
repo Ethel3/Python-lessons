@@ -154,13 +154,16 @@ print(num.fromkeys(mydictionary))
 # working with os path utilities
 import os 
 from os import path
-import datetime
-from datetime import date, time, timedelta
-import time
+import shutil
+from shutil import make_archive
+from zipfile import ZipFile
+# import datetime
+# from datetime import date, time, timedelta
+# import time
 
 def main():
     # print name of the os
-    print(os.name)
+    # print(os.name)
     
     # check for item existence and type
     # print("Item exists:", str(path.exists("textfile.txt")))
@@ -171,15 +174,36 @@ def main():
     # print("Item's path:", path.realpath("textfile.txt"))
     # print("Item's path and name:", path.split(path.realpath("textfile.txt")))
     
-    # get the modification time
-    t = time.ctime(path.getmtime("textfile.txt"))
-    print(t)
-    print(datetime.datetime.fromtimestamp(path.getmtime("textfile.txt")))
+    # # get the modification time
+    # t = time.ctime(path.getmtime("textfile.txt"))
+    # print(t)
+    # print(datetime.datetime.fromtimestamp(path.getmtime("textfile.txt")))
     
-    # calculate how long file was modified
-    td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
-    print("It has been", td, "since the file was modified")
-    print("or,", td.total_seconds(),"seconds")
+    # # calculate how long file was modified
+    # td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+    # print("It has been", td, "since the file was modified")
+    # print("or,", td.total_seconds(),"seconds")
     
+    # Using filesystem shell methods
+    # make a duplicate of an existing file
+    if path.exists("textfile.txt.bak"):
+        # get the path to the file in the current directory
+        src = path.realpath("textfile.txt")
+        # make a backup copy by appending "bak" to the name
+        # dst = src + ".bak"
+        # shutil.copy(src, dst)
+        
+        # renaming the original file
+        # os.rename("textfile.txt", "newfile.txt")
+        
+        #zip archive
+        root_dir, tail = path.split(src)
+        shutil.make_archive("archive", "zip", root_dir) 
+        
+        # control over ZIP file
+        with ZipFile("testzip.zip", "w") as newzip:
+            newzip.write("newfile.txt")
+            newzip.write("textfile.txt.bak")
+                
 if __name__== "__main__":
     main()
