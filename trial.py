@@ -105,7 +105,19 @@ print("The square root of 16 is", math.sqrt(16))
 print("Pi is", math.pi)
 
 # using exception
+# try:
+#     x = 10 /0
+# except:
+    # print("This did not work")
+
 try:
-    x = 10 /0
-except:
-    print("This did not work")
+    answer = input("What should I divide 10 by?")
+    num = int(answer)
+    print(10/num)
+except ZeroDivisionError as e:
+    print("You can not divide by Zero!")
+except ValueError as e:
+    print("You didn't give a valid number!")
+    print(e)
+finally:
+    print("This code always runs")
