@@ -239,5 +239,9 @@ def main():
         print(now.strftime("Locale date: %x"))
         print(now.strftime("Locale time: %X"))
         
+        # time inmformation
+        print(now.strftime("Current time:%I:%M:%S %p"))
+        print(now.strftime("24-hour time:%H:%M"))
+        
 if __name__== "__main__":
     main()
