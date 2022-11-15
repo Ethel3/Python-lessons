@@ -276,5 +276,9 @@ def main():
         hc = calendar.HTMLCalendar(calendar.TUESDAY)
         str = hc.formatmonth(2023, 1)
         print(str)
+        
+        # loop over days of a month
+        for i in c.itermonthdays(2023,8):
+            print(i)
 if __name__== "__main__":
     main()
