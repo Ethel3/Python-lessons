@@ -158,8 +158,8 @@ print(num.fromkeys(mydictionary))
 # from shutil import make_archive
 # from zipfile import ZipFile
 # import datetime
-from datetime import date
-from datetime import time
+# from datetime import date
+# from datetime import time
 from datetime import datetime
 
 # import time
@@ -209,22 +209,32 @@ def main():
         #     newzip.write("textfile.txt.bak")
         
         ## The date, time and datetime classes
-        today = date.today()
-        print("Today's date is", today)
+        # today = date.today()
+        # print("Today's date is", today)
         
         # printing the individual date components
-        print("Date components:", today.day, today.month, today.year)
+        # print("Date components:", today.day, today.month, today.year)
         # Today's weekday
-        print("Today's weekday # is", today.weekday())
-        days = ["mon", "tue", "wed", "thur", "fri", "sat", "sun"]
-        print("Which is a", days[today.weekday()])       
+        # print("Today's weekday # is", today.weekday())
+        # days = ["mon", "tue", "wed", "thur", "fri", "sat", "sun"]
+        # print("Which is a", days[today.weekday()])       
         
         # datetime objects
-        today = datetime.now()
-        print("The current date and time is", today)
+        # today = datetime.now()
+        # print("The current date and time is", today)
         
         # current time 
-        t = datetime.time(datetime.now())
-        print("The current time is", t)
+        # t = datetime.time(datetime.now())
+        # print("The current time is", t)
+        
+        ##formatting time output
+        now = datetime.now()
+        
+        # date formatting
+        print(now.strftime("The current year is: %Y"))
+        
+        # 
+        print(now.strftime("%a, %d %B, %y"))
+        
 if __name__== "__main__":
     main()
