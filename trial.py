@@ -158,11 +158,11 @@ print(num.fromkeys(mydictionary))
 # from shutil import make_archive
 # from zipfile import ZipFile
 # import datetime
-from datetime import date
-from datetime import time
-from datetime import datetime
-from datetime import timedelta
-# import time
+# from datetime import date
+# from datetime import time
+# from datetime import datetime
+# from datetime import timedelta
+import calendar
 
 def main():
     # print name of the os
@@ -243,29 +243,34 @@ def main():
         # print(now.strftime("Current time:%I:%M:%S %p"))
         # print(now.strftime("24-hour time:%H:%M"))
         ##a basic timedelta 
-        print(timedelta(days=365, hours=6, minutes=2))
+        # print(timedelta(days=365, hours=6, minutes=2))
         
         # print today's date
-        now = datetime.now()
-        print("Today is", now)
+        # now = datetime.now()
+        # print("Today is", now)
         
        # print today's date one year from now 
-        print("one year from now it will be", str(now + timedelta(days=365)))
-        print("In two weeks and 3 days from now it will be", str(now + timedelta(weeks=2, days=3)))
+        # print("one year from now it will be", str(now + timedelta(days=365)))
+        # print("In two weeks and 3 days from now it will be", str(now + timedelta(weeks=2, days=3)))
         
         # date a week ago
-        t = datetime.now() - timedelta(weeks=1)
-        s = t.strftime("%A %B %d, %Y")
-        print("One week ago it was", s)
+        # t = datetime.now() - timedelta(weeks=1)
+        # s = t.strftime("%A %B %d, %Y")
+        # print("One week ago it was", s)
         
         # days until april 1
-        today = date.today()
-        afd = date(today.year, 4,1)
-        if afd < today:
-            print("April Fools' Day already went by:", ((today-afd).days))
-            afd = afd.replace(year= today.year + 1)
-        time_to_afd = afd - today
-        print("It is", time_to_afd.days, "days until the next April Fools' Day!")
+        # today = date.today()
+        # afd = date(today.year, 4,1)
+        # if afd < today:
+            # print("April Fools' Day already went by:", ((today-afd).days))
+            # afd = afd.replace(year= today.year + 1)
+        # time_to_afd = afd - today
+        # print("It is", time_to_afd.days, "days until the next April Fools' Day!")
+        
+        ##working with calendars
+        c = calendar.TextCalendar(calendar.MONDAY)
+        str = c.formatmonth(2023, 1, 0, 0)
+        print(str)
         
 if __name__== "__main__":
     main()
