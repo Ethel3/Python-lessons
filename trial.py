@@ -278,7 +278,26 @@ def main():
         print(str)
         
         # loop over days of a month
-        for i in c.itermonthdays(2023,8):
-            print(i)
+        # for i in c.itermonthdays(2023,8):
+            # print(i)
+            
+        # names of months and days abbreviated 
+        for name in calendar.month_name:
+            print(name)
+            
+        for day in calendar.day_name:
+            print(day)
+        
+        # calculating meeting days
+        print("Team meetings will be on:")
+        for m in range(1, 13):
+            cal = calendar.monthcalendar(2023, m)
+            weekone = cal[0]
+            weektwo = cal[1]
+            if weekone[calendar.FRIDAY] !=0:
+                meetday = weekone[calendar.FRIDAY]
+            else:
+                meetday = weektwo[calendar.FRIDAY]
+            print(calendar.month_name[m], meetday)
 if __name__== "__main__":
     main()
