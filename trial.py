@@ -152,13 +152,16 @@ print(num.fromkeys(mydictionary))
 
 
 # working with os path utilities
-import os 
-from os import path
-import shutil
-from shutil import make_archive
-from zipfile import ZipFile
+# import os 
+# from os import path
+# import shutil
+# from shutil import make_archive
+# from zipfile import ZipFile
 # import datetime
-# from datetime import date, time, timedelta
+from datetime import date
+from datetime import time
+from datetime import datetime
+
 # import time
 
 def main():
@@ -186,9 +189,9 @@ def main():
     
     # Using filesystem shell methods
     # make a duplicate of an existing file
-    if path.exists("textfile.txt.bak"):
+    # if path.exists("textfile.txt.bak"):
         # get the path to the file in the current directory
-        src = path.realpath("textfile.txt")
+        # src = path.realpath("textfile.txt")
         # make a backup copy by appending "bak" to the name
         # dst = src + ".bak"
         # shutil.copy(src, dst)
@@ -197,13 +200,17 @@ def main():
         # os.rename("textfile.txt", "newfile.txt")
         
         #zip archive
-        root_dir, tail = path.split(src)
-        shutil.make_archive("archive", "zip", root_dir) 
+        # root_dir, tail = path.split(src)
+        # shutil.make_archive("archive", "zip", root_dir) 
         
         # control over ZIP file
-        with ZipFile("testzip.zip", "w") as newzip:
-            newzip.write("newfile.txt")
-            newzip.write("textfile.txt.bak")
+        # with ZipFile("testzip.zip", "w") as newzip:
+        #     newzip.write("newfile.txt")
+        #     newzip.write("textfile.txt.bak")
+        
+        ## The date, time and datetime classes
+        today = date.today()
+        print("Today's date is", today)
                 
 if __name__== "__main__":
     main()
