@@ -231,10 +231,13 @@ def main():
         now = datetime.now()
         
         # date formatting
-        print(now.strftime("The current year is: %Y"))
-        
-        # 
+        print(now.strftime("The current year is: %Y")) 
         print(now.strftime("%a, %d %B, %y"))
+        
+        # locale dat eand time
+        print(now.strftime("Locale date and time: %c"))
+        print(now.strftime("Locale date: %x"))
+        print(now.strftime("Locale time: %X"))
         
 if __name__== "__main__":
     main()
