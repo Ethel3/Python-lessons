@@ -251,5 +251,21 @@ def main():
         
        # print today's date one year from now 
         print("one year from now it will be", str(now + timedelta(days=365)))
+        print("In two weeks and 3 days from now it will be", str(now + timedelta(weeks=2, days=3)))
+        
+        # date a week ago
+        t = datetime.now() - timedelta(weeks=1)
+        s = t.strftime("%A %B %d, %Y")
+        print("One week ago it was", s)
+        
+        # days until april 1
+        today = date.today()
+        afd = date(today.year, 4,1)
+        if afd < today:
+            print("April Fools' Day already went by:", ((today-afd).days))
+            afd = afd.replace(year= today.year + 1)
+        time_to_afd = afd - today
+        print("It is", time_to_afd.days, "days until the next April Fools' Day!")
+        
 if __name__== "__main__":
     main()
