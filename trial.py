@@ -219,5 +219,12 @@ def main():
         days = ["mon", "tue", "wed", "thur", "fri", "sat", "sun"]
         print("Which is a", days[today.weekday()])       
         
+        # datetime objects
+        today = datetime.now()
+        print("The current date and time is", today)
+        
+        # current time 
+        t = datetime.time(datetime.now())
+        print("The current time is", t)
 if __name__== "__main__":
     main()
