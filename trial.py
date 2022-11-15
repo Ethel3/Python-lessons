@@ -272,5 +272,9 @@ def main():
         str = c.formatmonth(2023, 1, 0, 0)
         print(str)
         
+        # html formatted calendar
+        hc = calendar.HTMLCalendar(calendar.TUESDAY)
+        str = hc.formatmonth(2023, 1)
+        print(str)
 if __name__== "__main__":
     main()
