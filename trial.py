@@ -158,10 +158,10 @@ print(num.fromkeys(mydictionary))
 # from shutil import make_archive
 # from zipfile import ZipFile
 # import datetime
-# from datetime import date
-# from datetime import time
+from datetime import date
+from datetime import time
 from datetime import datetime
-
+from datetime import timedelta
 # import time
 
 def main():
@@ -228,20 +228,28 @@ def main():
         # print("The current time is", t)
         
         ##formatting time output
-        now = datetime.now()
+        # now = datetime.now()
         
         # date formatting
-        print(now.strftime("The current year is: %Y")) 
-        print(now.strftime("%a, %d %B, %y"))
+        # print(now.strftime("The current year is: %Y")) 
+        # print(now.strftime("%a, %d %B, %y"))
         
         # locale dat eand time
-        print(now.strftime("Locale date and time: %c"))
-        print(now.strftime("Locale date: %x"))
-        print(now.strftime("Locale time: %X"))
+        # print(now.strftime("Locale date and time: %c"))
+        # print(now.strftime("Locale date: %x"))
+        # print(now.strftime("Locale time: %X"))
         
         # time inmformation
-        print(now.strftime("Current time:%I:%M:%S %p"))
-        print(now.strftime("24-hour time:%H:%M"))
+        # print(now.strftime("Current time:%I:%M:%S %p"))
+        # print(now.strftime("24-hour time:%H:%M"))
+        ##a basic timedelta 
+        print(timedelta(days=365, hours=6, minutes=2))
         
+        # print today's date
+        now = datetime.now()
+        print("Today is", now)
+        
+       # print today's date one year from now 
+        print("one year from now it will be", str(now + timedelta(days=365)))
 if __name__== "__main__":
     main()
