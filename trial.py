@@ -214,6 +214,10 @@ def main():
         
         # printing the individual date components
         print("Date components:", today.day, today.month, today.year)
-                
+        # Today's weekday
+        print("Today's weekday # is", today.weekday())
+        days = ["mon", "tue", "wed", "thur", "fri", "sat", "sun"]
+        print("Which is a", days[today.weekday()])       
+        
 if __name__== "__main__":
     main()
