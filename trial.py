@@ -211,6 +211,9 @@ def main():
         ## The date, time and datetime classes
         today = date.today()
         print("Today's date is", today)
+        
+        # printing the individual date components
+        print("Date components:", today.day, today.month, today.year)
                 
 if __name__== "__main__":
     main()
