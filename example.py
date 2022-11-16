@@ -75,3 +75,29 @@ print(car2.doors)
 car1.drive(40)
 car2.drive(50)
 mb1.drive(70)
+
+
+# parsing and processing html
+from html.parser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+    def handle_comment(self, data):
+        pass
+    
+    def handle_starting(self, tag, attrs):
+        pass
+    
+    def handle_data(self, data):
+        pass
+    
+def main(): 
+    # feeding the parser with html
+    parser = MyHTMLParser()
+    
+    f = open("samplehtml.html")
+    if f.mode == "r":
+        contents = f.read() #read the entire file
+        parser.feed(contents)
+if __name__== "__main__":
+    main()
+    
