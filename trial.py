@@ -181,6 +181,12 @@ def printResults(data):
     for i in theJSON["features"]:
         print(i["properties"]["place"])
     print("------------\n")
+    
+    # events with magnitude greater than 4
+    for i in theJSON["features"]:
+        if i["properties"]["mag"]>= 4.0:
+            print(i["properties"]["place"])
+    print("-----------\n")
 def main():
     # print name of the os
     # print(os.name)
