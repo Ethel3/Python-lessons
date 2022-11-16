@@ -91,10 +91,12 @@ class MyHTMLParser(HTMLParser):
         pass
     
     def handle_data(self, data):
+        if data.isspace():
+            return
         print("Encountered text data:", data)
         pos = self.getpos()
         print("At line:", pos[0], "position",pos[1])
-        pass
+        
     
 def main(): 
     # feeding the parser with html
