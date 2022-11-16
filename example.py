@@ -135,6 +135,17 @@ def main():
     print(skills.length, "skills are listed")
     for skill in skills :
         print(skill.getAttribute("name"))
+        
+    # create a new xml tag and add it the document
+    newSkill = doc.createElement("skill")
+    newSkill.setAttribute("name", "Python")
+    doc.firstChild.appendChild(newSkill)
+    
+    skills = doc.getElementsByTagName("skill")
+    print(skills.length, "skills are listed")
+    for skill in skills :
+        print(skill.getAttribute("name"))
+        
 if __name__== "__main__":
     main()
     
