@@ -162,7 +162,8 @@ print(num.fromkeys(mydictionary))
 # from datetime import time
 # from datetime import datetime
 # from datetime import timedelta
-import calendar
+# import calendar
+import urllib.request
 
 def main():
     # print name of the os
@@ -268,36 +269,42 @@ def main():
         # print("It is", time_to_afd.days, "days until the next April Fools' Day!")
         
         ##working with calendars
-        c = calendar.TextCalendar(calendar.MONDAY)
-        str = c.formatmonth(2023, 1, 0, 0)
-        print(str)
+        # c = calendar.TextCalendar(calendar.MONDAY)
+        # str = c.formatmonth(2023, 1, 0, 0)
+        # print(str)
         
         # html formatted calendar
-        hc = calendar.HTMLCalendar(calendar.TUESDAY)
-        str = hc.formatmonth(2023, 1)
-        print(str)
+        # hc = calendar.HTMLCalendar(calendar.TUESDAY)
+        # str = hc.formatmonth(2023, 1)
+        # print(str)
         
         # loop over days of a month
         # for i in c.itermonthdays(2023,8):
             # print(i)
             
         # names of months and days abbreviated 
-        for name in calendar.month_name:
-            print(name)
+        # for name in calendar.month_name:
+            # print(name)
             
-        for day in calendar.day_name:
-            print(day)
+        # for day in calendar.day_name:
+            # print(day)
         
         # calculating meeting days
-        print("Team meetings will be on:")
-        for m in range(1, 13):
-            cal = calendar.monthcalendar(2023, m)
-            weekone = cal[0]
-            weektwo = cal[1]
-            if weekone[calendar.FRIDAY] !=0:
-                meetday = weekone[calendar.FRIDAY]
-            else:
-                meetday = weektwo[calendar.FRIDAY]
-            print(calendar.month_name[m], meetday)
+        # print("Team meetings will be on:")
+        # for m in range(1, 13):
+        #     cal = calendar.monthcalendar(2023, m)
+        #     weekone = cal[0]
+        #     weektwo = cal[1]
+        #     if weekone[calendar.FRIDAY] !=0:
+        #         meetday = weekone[calendar.FRIDAY]
+        #     else:
+        #         meetday = weektwo[calendar.FRIDAY]
+        #     print(calendar.month_name[m], meetday)
+        
+    weburl = urllib.request.urlopen("http://www.google.com")
+    print("result code:", weburl.getcode())
+    data = weburl.read()
+    print(data)
+        
 if __name__== "__main__":
     main()
