@@ -167,8 +167,20 @@ import urllib.request
 import json
 
 def printResults(data):
-    thJSON = json.loads(data) 
-
+    theJSON = json.loads(data) #use to load data strings into dictionary 
+    
+   # Accessing the contents of the JSON 
+    if "title" in theJSON["metadata"]:
+        print(theJSON["metadata"]["title"])
+        
+    # number of events 
+    count = theJSON["metadata"]["count"]
+    print(count, "events recorded")
+    
+    # place where each event occurred
+    for i in theJSON["features"]:
+        print(i["properties"]["place"])
+    print("------------\n")
 def main():
     # print name of the os
     # print(os.name)
@@ -306,13 +318,6 @@ def main():
         #     print(calendar.month_name[m], meetday)
         
         
-        # Accessing the contents of the JSON 
-        if "title" in theJSON["metadata"]:
-            print(theJSON["metadata"]["title"])
-        
-        # number of events 
-        count = theJSON["metadata"]["count"]
-        print(count, "events recorded")
         
     urlData = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"
         
