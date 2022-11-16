@@ -164,6 +164,10 @@ print(num.fromkeys(mydictionary))
 # from datetime import timedelta
 # import calendar
 import urllib.request
+import json
+
+def printResults(data):
+    thJSON = json.loads(data) 
 
 def main():
     # print name of the os
@@ -301,10 +305,29 @@ def main():
         #         meetday = weektwo[calendar.FRIDAY]
         #     print(calendar.month_name[m], meetday)
         
-    weburl = urllib.request.urlopen("http://www.google.com")
-    print("result code:", weburl.getcode())
-    data = weburl.read()
-    print(data)
+        
+        # Accessing the contents of the JSON 
+        if "title" in theJSON["metadata"]:
+            print(theJSON["metadata"]["title"])
+        
+        # number of events 
+        count = theJSON["metadata"]["count"]
+        print(count, "events recorded")
+        
+    urlData = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"
+        
+        # open URL and read data
+    webUrl = urllib.request.urlopen("http://www.google.com")
+    print("result code: " + str(webUrl.getcode()))     
+    if (webUrl.getcode() == 200):
+        data = webUrl.read()
+        printResults(data)
+    else: 
+        print("Received an error from the server, cannot print results, webUrl.getcode()")
+
+    
+    # working with json data 
+   
         
 if __name__== "__main__":
     main()
