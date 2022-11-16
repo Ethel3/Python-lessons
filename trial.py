@@ -187,6 +187,14 @@ def printResults(data):
         if i["properties"]["mag"]>= 4.0:
             print(i["properties"]["place"])
     print("-----------\n")
+    
+    # event with at least  1 person reportedly feeling something
+    print("\nEvents that were felt:")
+    for i in theJSON["features"]:
+        feltReports = i["properties"]["felt"]
+        if feltReports != None:
+            if feltReports > 0:
+                print(i["properties"]["place"], feltReports, "times")
 def main():
     # print name of the os
     # print(os.name)
