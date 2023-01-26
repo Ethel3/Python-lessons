@@ -155,4 +155,4 @@ if __name__== "__main__":
 # print(0.42)
 
 # print(4 + 1.67)
-  
+#   print(2**5)
