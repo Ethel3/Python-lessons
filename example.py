@@ -131,10 +131,10 @@ def main():
     print(doc.firstChild.tagName)
     
     # get a list of XML tags from the document and print each one
-    skills = doc.getElementsByTagName("skill")
-    print(skills.length, "skills are listed")
-    for skill in skills :
-        print(skill.getAttribute("name"))
+    # skills = doc.getElementsByTagName("skill")
+    # print(skills.length, "skills are listed")
+    # for skill in skills :
+    #     print(skill.getAttribute("name"))
         
     # create a new xml tag and add it the document
     newSkill = doc.createElement("skill")
