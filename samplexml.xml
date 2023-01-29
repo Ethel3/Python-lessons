@@ -8,3 +8,9 @@
 <skill name="c"/>
 <skill name="sass"/>
 </person>
+
+<house>
+<house1>Dome</house1>
+<house2>Kwabenya</house2>
+<constituency>Dome-Kwabenya</constituency>
+</house>
