@@ -57,44 +57,44 @@
 import calendar 
 
 # This function counts specific number of the given weekdayfor the spcific month
-def countdays(theyear, themonth, whichday):
-    daycount = 0
-    weekslist = calendar.monthcalendar(theyear, themonth)
-    for week in weekslist:
-        if week[whichday] != 0:
-            daycount += 1
-    return daycount
+# def countdays(theyear, themonth, whichday):
+#     daycount = 0
+#     weekslist = calendar.monthcalendar(theyear, themonth)
+#     for week in weekslist:
+#         if week[whichday] != 0:
+#             daycount += 1
+#     return daycount
 
-print("--Day counter program--\n")
+# print("--Day counter program--\n")
 
-run = True
-while(run):
-    try:
-        print("Which day of the week do you want to count?")
-        print("0: Monday")
-        print("1: Tuesday") 
-        print("2: Wednesday") 
-        print("3: Thursday") 
-        print("4: Friday") 
-        print("5: Saturday") 
-        print("6: Sunday") 
-        print("Or 'exit' to quit")     
+# run = True
+# while(run):
+#     try:
+#         print("Which day of the week do you want to count?")
+#         print("0: Monday")
+#         print("1: Tuesday") 
+#         print("2: Wednesday") 
+#         print("3: Thursday") 
+#         print("4: Friday") 
+#         print("5: Saturday") 
+#         print("6: Sunday") 
+#         print("Or 'exit' to quit")     
         
-        theday = input("? ")
-        if theday == "exit":
-            run = False
-            break 
-        day = int(theday)
+#         theday = input("? ")
+#         if theday == "exit":
+#             run = False
+#             break 
+#         day = int(theday)
         
-        yearstr = input("Enter year: ")
-        year = int(yearstr)
+#         yearstr = input("Enter year: ")
+#         year = int(yearstr)
         
-        monthstr = input("Enter month: ")
-        month = int(monthstr)
+#         monthstr = input("Enter month: ")
+#         month = int(monthstr)
         
-        result = countdays(year, month, day)
-        print("There are" + str(result) + "of those days in the month and year specified")
-        print("---------\n")
-    except Exception as e:
-        print(e)
-        print("Sorry, that's not a valid input")
+#         result = countdays(year, month, day)
+#         print("There are" + str(result) + "of those days in the month and year specified")
+#         print("---------\n")
+#     except Exception as e:
+#         print(e)
+#         print("Sorry, that's not a valid input")
