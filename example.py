@@ -157,5 +157,5 @@ if __name__== "__main__":
 # print(4 + 1.67)
 #   print(2**5)
 
-# floor division is done using two forward slashes
+# floor division is done using two forward slashes. You can also use floor division on floats
 print(20 // 7)
