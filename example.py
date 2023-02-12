@@ -161,3 +161,6 @@ print(20 % 6)
 
 # floor division is done using two forward slashes. You can also use floor division on floats
 print(20 // 7)
+
+# In regards to double quote strings, it must be escaped by placing a backslash before them
+print('Kofi\'s mother: He\'s not an angel.')
