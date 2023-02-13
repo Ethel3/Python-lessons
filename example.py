@@ -162,6 +162,8 @@ print(20 % 6)
 # floor division is done using two forward slashes. You can also use floor division on floats
 print(20 // 7)
 
+# \n represents newlines. It can be used to create multi-line output.
+
 # In regards to double quote strings, it must be escaped by placing a backslash before them.
 # Backslashes can be used to escape tags and arbitary unicode characters.
 print('Kofi\'s mother: He\'s not an angel.')
