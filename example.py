@@ -164,6 +164,9 @@ print(20 // 7)
 
 # \n represents newlines. It can be used to create multi-line output.
 print ('one\nTwo\nThree')
+
+# Newlines will be automatically added for strings that are created using three quotes.
+print("""this is a multi device""")
 # In regards to double quote strings, it must be escaped by placing a backslash before them.
 # Backslashes can be used to escape tags and arbitary unicode characters.
 print('Kofi\'s mother: He\'s not an angel.')
