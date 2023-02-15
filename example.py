@@ -172,3 +172,5 @@ print("""this is a multi device""")
 print('Kofi\'s mother: He\'s not an angel.')
 
 # \t represents a tab
+# string concatenation 
+print ("Spam" + 'eggs')
