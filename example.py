@@ -173,4 +173,7 @@ print('Kofi\'s mother: He\'s not an angel.')
 
 # \t represents a tab
 # string concatenation 
-print ("Spam" + 'eggs')
+print ("Spam" + 'eggs') 
+
+# When multiplying stringss, the string should come firts before the integer.
+print ("Boys" * '4')
