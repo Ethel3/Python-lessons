@@ -176,4 +176,4 @@ print('Kofi\'s mother: He\'s not an angel')
 print ("Spam" + 'eggs') 
 
 # When multiplying stringss, the string should come firts before the integer.
-print ("Boys" * '4')
+print("Boys" * 4)
