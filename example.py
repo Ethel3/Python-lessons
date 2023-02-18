@@ -177,3 +177,4 @@ print ("Spam" + 'eggs')
 
 # When multiplying stringss, the string should come firts before the integer.
 print("Boys" * 4)
+print(("Kofi" * 3) + "!")
